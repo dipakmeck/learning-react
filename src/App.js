@@ -1,6 +1,7 @@
 import './App.scss';
 import Clock from './components/Clock';
 import Header from './components/Header';
+import Meals from './components/Meals';
 import RegisterForm from './components/RegisterForm';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 		<>
 			<Header />
 			{/* <RegisterForm /> */}
-			<Clock />
+			{/* <Clock /> */}
+			<Meals />
 		</>
 	);
 }
