@@ -1,6 +1,11 @@
 import React from 'react';
 import './style.scss';
+import Navigation from '../Navigation';
 
 export default function Header() {
-	return <h1>Hello World!</h1>;
+	return (
+		<>
+			<Navigation />
+		</>
+	);
 }
