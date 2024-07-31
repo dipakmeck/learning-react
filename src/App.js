@@ -7,6 +7,7 @@ import RegisterForm from './components/RegisterForm';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import { UserProvider } from './context/User';
 
 function App() {
 	return (
@@ -24,4 +25,12 @@ function App() {
 	);
 }
 
-export default App;
+function Root() {
+	return (
+		<UserProvider>
+			<App />
+		</UserProvider>
+	);
+}
+
+export default Root;
